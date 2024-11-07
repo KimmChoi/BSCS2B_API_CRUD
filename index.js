@@ -6,12 +6,10 @@ const moment =require("moment")
 
 const PORT = process.env.PORT || 5000
 
-const logger = (req, res, next) => {
-    console.log( http://localhost:5000
-        `${req.protocol}://${req.get("host")}${req.originalUrl} : ${moment().format()}`
-    )
-    next();
-}
+//const logger = (req, res, next) => {
+//    console.log(`http://localhost:5000${req.protocol}://${req.get("host")}${req.originalUrl} : ${moment().format()}`)
+//    next();
+//}
 
 const connection = mysql.createConnection({
     host: "blymgvx3ambhgmsmin1o-mysql.services.clever-cloud.com",
